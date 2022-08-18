@@ -711,6 +711,70 @@ body#tinymce.wp-editor p {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
+body#tinymce.wp-editor .font-prismaregular,
+body#tinymce.wp-editor .font-prisma {
+  font-family: prismaregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-besom_2regular,
+body#tinymce.wp-editor .font-besom {
+  font-family: besom_2regular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-rush_brushregular,
+body#tinymce.wp-editor .font-rush-brush {
+  font-family: rush_brushregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-leira_literegular,
+body#tinymce.wp-editor .font-leira {
+  font-family: leira_literegular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-awery_smallcapsregular,
+body#tinymce.wp-editor .font-awery_smallcaps {
+  font-family: awery_smallcapsregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-aweryregular,
+body#tinymce.wp-editor .font-awery {
+  font-family: aweryregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-krungthepregular,
+body#tinymce.wp-editor .font-krungthep {
+  font-family: krungthepregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-ds-digitalnormal,
+body#tinymce.wp-editor .font-ds-digital {
+  font-family: ds-digitalnormal, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-ds-digitalbold,
+body#tinymce.wp-editor .font-ds-digital-bold {
+  font-family: ds-digitalbold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-ds-digitalitalic,
+body#tinymce.wp-editor .font-ds-digital-italic {
+  font-family: ds-digitalitalic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-ds-digitalbold_italic,
+body#tinymce.wp-editor .font-ds-digital-bold-italic {
+  font-family: ds-digitalbold_italic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-budmojiggler,
+body#tinymce.wp-editor .font-budmo-jiggler {
+  font-family: budmojiggler, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-budmojigglish,
+body#tinymce.wp-editor .font-budmo-jigglish {
+  font-family: budmojigglish, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-panfleta_stencilextra_bold,
+body#tinymce.wp-editor .font-panfleta-stencil-extra-bold {
+  font-family: panfleta_stencilextra_bold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-panfleta_stencilregular,
+body#tinymce.wp-editor .font-panfleta-stencil-regular {
+  font-family: panfleta_stencilregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body#tinymce.wp-editor .font-abril_fatfaceregular,
+body#tinymce.wp-editor .font-abril-fatface {
+  font-family: abril_fatfaceregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
   color: #f01d4f;
   /* on hover */

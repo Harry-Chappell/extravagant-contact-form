@@ -9,3 +9,8 @@ on larger screens.
 
 ******************************************************************/
 
+
+.wrap {
+	padding-right: calc((100% - 1180px) / 2);
+	padding-left: calc((100% - 1180px) / 2);
+}

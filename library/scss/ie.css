@@ -177,6 +177,86 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
+.font-prismaregular,
+.font-prisma {
+  font-family: prismaregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-besom_2regular,
+.font-besom {
+  font-family: besom_2regular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-rush_brushregular,
+.font-rush-brush {
+  font-family: rush_brushregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-leira_literegular,
+.font-leira {
+  font-family: leira_literegular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-awery_smallcapsregular,
+.font-awery_smallcaps {
+  font-family: awery_smallcapsregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-aweryregular,
+.font-awery {
+  font-family: aweryregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-krungthepregular,
+.font-krungthep {
+  font-family: krungthepregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalnormal,
+.font-ds-digital {
+  font-family: ds-digitalnormal, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalbold,
+.font-ds-digital-bold {
+  font-family: ds-digitalbold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalitalic,
+.font-ds-digital-italic {
+  font-family: ds-digitalitalic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalbold_italic,
+.font-ds-digital-bold-italic {
+  font-family: ds-digitalbold_italic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-budmojiggler,
+.font-budmo-jiggler {
+  font-family: budmojiggler, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-budmojigglish,
+.font-budmo-jigglish {
+  font-family: budmojigglish, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-panfleta_stencilextra_bold,
+.font-panfleta-stencil-extra-bold {
+  font-family: panfleta_stencilextra_bold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-panfleta_stencilregular,
+.font-panfleta-stencil-regular {
+  font-family: panfleta_stencilregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-abril_fatfaceregular,
+.font-abril-fatface {
+  font-family: abril_fatfaceregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -255,6 +335,11 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+.wrap {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -332,7 +417,8 @@ GENERAL STYLES
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 760px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /*********************
@@ -473,7 +559,8 @@ be seen on the Desktop.
 
 ******************************************************************/
 .wrap {
-  width: 1040px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 /*

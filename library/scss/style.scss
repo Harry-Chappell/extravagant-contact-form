@@ -77,10 +77,10 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 *********************/
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 480px) {
 
-	// styles in 481up.scss
-	@import "breakpoints/481up";
+	// styles in 480up.scss
+	@import "breakpoints/480up";
 
 } // end of media query
 
@@ -114,10 +114,10 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1280px) {
 
-	// styles in 1240up.scss
-	@import "breakpoints/1240up";
+	// styles in 1280up.scss
+	@import "breakpoints/1280up";
 
 } // end of media query
 

@@ -628,6 +628,86 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
+.font-prismaregular,
+.font-prisma {
+  font-family: prismaregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-besom_2regular,
+.font-besom {
+  font-family: besom_2regular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-rush_brushregular,
+.font-rush-brush {
+  font-family: rush_brushregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-leira_literegular,
+.font-leira {
+  font-family: leira_literegular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-awery_smallcapsregular,
+.font-awery_smallcaps {
+  font-family: awery_smallcapsregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-aweryregular,
+.font-awery {
+  font-family: aweryregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-krungthepregular,
+.font-krungthep {
+  font-family: krungthepregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalnormal,
+.font-ds-digital {
+  font-family: ds-digitalnormal, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalbold,
+.font-ds-digital-bold {
+  font-family: ds-digitalbold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalitalic,
+.font-ds-digital-italic {
+  font-family: ds-digitalitalic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-ds-digitalbold_italic,
+.font-ds-digital-bold-italic {
+  font-family: ds-digitalbold_italic, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-budmojiggler,
+.font-budmo-jiggler {
+  font-family: budmojiggler, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-budmojigglish,
+.font-budmo-jigglish {
+  font-family: budmojigglish, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-panfleta_stencilextra_bold,
+.font-panfleta-stencil-extra-bold {
+  font-family: panfleta_stencilextra_bold, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-panfleta_stencilregular,
+.font-panfleta-stencil-regular {
+  font-family: panfleta_stencilregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-abril_fatfaceregular,
+.font-abril-fatface {
+  font-family: abril_fatfaceregular, "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -965,9 +1045,20 @@ them however you see fit.
     width: 8.33%;
   }
 }
+.page-template-page-form {
+  background-color: #fff;
+}
 .page-template-page-form header.header,
 .page-template-page-form footer.footer {
   display: none;
+}
+.page-template-page-form h1 {
+  color: #000;
+  font-family: "Times New Roman", Times, "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: 50px;
+}
+.page-template-page-form h2 {
+  font-size: 50px;
 }
 
 /*********************
@@ -1447,8 +1538,8 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 96%;
-  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*********************
@@ -1984,7 +2075,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 *********************/
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 480px) {
   /******************************************************************
   Site Name:
   Author:
@@ -2007,6 +2098,10 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
+  .wrap {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2091,7 +2186,8 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    width: 760px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   /*********************
   HEADER STYLES
@@ -2236,14 +2332,15 @@ you can add resource intensive styles.
 
   ******************************************************************/
   .wrap {
-    width: 1040px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1280px) {
   /******************************************************************
   Site Name: 
   Author: 
@@ -2254,6 +2351,10 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
 
   ******************************************************************/
+  .wrap {
+    padding-right: calc((100% - 1180px) / 2);
+    padding-left: calc((100% - 1180px) / 2);
+  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
