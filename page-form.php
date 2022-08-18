@@ -21,7 +21,7 @@
 
 		<main id="main" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-			
+			<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
 		</main>
 
