@@ -22,22 +22,28 @@ $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
-$black:             #323944;
+$black:             #000;
 $white:             #fff;
 
-$light-gray:        #f8f9fa;
-$gray:              #eaedf2;
-$text-color:        #5c6b80;
-$meta-gray:         #9fa6b4;
+$light-gray:        #f6f6f6;
+$gray:              #e4e4e4;
+$text-color:        #707070;
+$meta-gray:         $gray;
 
-$tan:               #eceee5;
+$yellow:            #ffd10f;
+$red:               #ff6b0f;
+$blue:              #0fb5ff;
+$dark-blue:         #2830be;
+$purple:            #be29b8;
+$green:             #45a016;
+$midnight:          #020e69;
+$neon:              #35ff24;
+$pink:              #ff0076;
+$orange:            #ff7600;
 
-$green:             #7dd667;
 
-$bones-pink:        #f01d4f;
-$blue:              #2980b9;
 
-$link-color:        $bones-pink;
+$link-color:        $pink;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
@@ -49,3 +55,30 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
+
+
+.background-yellow {background-color: $yellow;}
+.background-red {background-color: $red;}
+.background-blue {background-color: $blue;}
+.background-dark-blue {background-color: $dark-blue;}
+.background-purple {background-color: $purple;}
+.background-green {background-color: $green;}
+.background-midnight {background-color: $midnight;}
+.background-neon {background-color: $neon;}
+.background-pink {background-color: $pink;}
+.background-orange {background-color: $orange;}
+.background-black {background-color: $black;}
+.background-white {background-color: $white;}
+
+.color-yellow {color: $yellow;}
+.color-red {color: $red;}
+.color-blue {color: $blue;}
+.color-dark-blue {color: $dark-blue;}
+.color-purple {color: $purple;}
+.color-green {color: $green;}
+.color-midnight {color: $midnight;}
+.color-neon {color: $neon;}
+.color-pink {color: $pink;}
+.color-orange {color: $orange;}
+.color-black {color: $black;}
+.color-white {color: $white;}

@@ -25,31 +25,31 @@
 
 			<form action="">
 
-				<div id="who-are-you" 	class="wrap">
-					<h2 class="font-prisma">Who are you?</h2>
-				</div>
+				<section id="who-are-you" 	class="wrap background-yellow">
+					<h2 class="font-prisma color-black">Who are you?</h2>
+				</section>
 
-				<div id="contact" 		class="wrap">
-					<h2 class="font-abril-fatface">How do we contact you?</h2>
-				</div>
+				<section id="contact" 		class="wrap background-red">
+					<h2 class="font-abril-fatface color-yellow">How do we contact you?</h2>
+				</section>
 
-				<div id="sport-shirt" 	class="wrap">
-					<h2 class="font-rush-brush">What's your desired sport and shirt number?</h2>
-				</div>
+				<section id="sport-shirt" 	class="wrap background-blue">
+					<h2 class="font-rush-brush color-dark-blue">What's your desired sport and shirt number?</h2>
+				</section>
 
-				<div id="audio" 		class="wrap">
-					<h2 class="font-leira">What're your audio prefrences?</h2>
-				</div>
+				<section id="audio" 		class="wrap background-purple">
+					<h2 class="font-leira color-white">What're your audio prefrences?</h2>
+				</section>
 
-				<div id="turtles" 		class="wrap">
-					<h2 class="font-awery">Which is the best turtle?</h2>
-				</div>
+				<section id="turtles" 		class="wrap background-green">
+					<h2 class="font-awery color-white">Which is the best turtle?</h2>
+				</section>
 
-				<div id="wakeup-alarm" 	class="wrap">
-					<h2 class="font-krungthep">When would you like your wakeup alarm set?</h2>
-				</div>
+				<section id="wakeup-alarm" 	class="wrap background-midnight">
+					<h2 class="font-krungthep color-white">When would you like your wakeup alarm set?</h2>
+				</section>
 
-				<button class="submit font-budmo-jigglish">Submit</button>
+				<button class="submit font-budmo-jigglish background-pink color-white">Submit</button>
 			</form>
 
 		</main>

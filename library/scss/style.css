@@ -490,6 +490,102 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
+.background-yellow {
+  background-color: #ffd10f;
+}
+
+.background-red {
+  background-color: #ff6b0f;
+}
+
+.background-blue {
+  background-color: #0fb5ff;
+}
+
+.background-dark-blue {
+  background-color: #2830be;
+}
+
+.background-purple {
+  background-color: #be29b8;
+}
+
+.background-green {
+  background-color: #45a016;
+}
+
+.background-midnight {
+  background-color: #020e69;
+}
+
+.background-neon {
+  background-color: #35ff24;
+}
+
+.background-pink {
+  background-color: #ff0076;
+}
+
+.background-orange {
+  background-color: #ff7600;
+}
+
+.background-black {
+  background-color: #000;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.color-yellow {
+  color: #ffd10f;
+}
+
+.color-red {
+  color: #ff6b0f;
+}
+
+.color-blue {
+  color: #0fb5ff;
+}
+
+.color-dark-blue {
+  color: #2830be;
+}
+
+.color-purple {
+  color: #be29b8;
+}
+
+.color-green {
+  color: #45a016;
+}
+
+.color-midnight {
+  color: #020e69;
+}
+
+.color-neon {
+  color: #35ff24;
+}
+
+.color-pink {
+  color: #ff0076;
+}
+
+.color-orange {
+  color: #ff7600;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-white {
+  color: #fff;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -1052,13 +1148,31 @@ them however you see fit.
 .page-template-page-form footer.footer {
   display: none;
 }
+.page-template-page-form #content {
+  margin: 0;
+}
 .page-template-page-form h1 {
   color: #000;
   font-family: "Times New Roman", Times, "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 50px;
+  height: 200px;
+  display: flex;
+  align-items: center;
 }
 .page-template-page-form h2 {
   font-size: 50px;
+  margin: 0 0 50px;
+}
+.page-template-page-form section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.page-template-page-form button.submit {
+  width: 100%;
+  padding: 50px 0;
+  font-size: 200px;
+  border: 0;
+  text-shadow: 0 0 25px yellow;
 }
 
 /*********************
@@ -1159,13 +1273,13 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn, #submit, .comment-reply-link {
-  background-color: #2980b9;
+  background-color: #0fb5ff;
 }
 .blue-btn:hover, #submit:hover, .comment-reply-link:hover, .blue-btn:focus, #submit:focus, .comment-reply-link:focus {
-  background-color: #2574a8;
+  background-color: #00adfa;
 }
 .blue-btn:active, #submit:active, .comment-reply-link:active {
-  background-color: #2472a4;
+  background-color: #00a9f5;
 }
 
 /******************************************************************
@@ -1211,7 +1325,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5c6b80;
+  color: #707070;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -1219,7 +1333,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
+  background-color: #e4e4e4;
   transition: background-color 0.24s ease-in-out;
 }
 input[type=text]:focus, input[type=text]:active,
@@ -1255,7 +1369,7 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
+  background-color: #eeeeee;
   outline: none;
 }
 input[type=text].error, input[type=text].is-invalid,
@@ -1489,8 +1603,8 @@ body {
   font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
+  color: #707070;
+  background-color: #e4e4e4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1546,13 +1660,13 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #ff0076;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #d10e3c;
+  color: #d10061;
 }
 a:link, a:visited:link {
   /*
@@ -1610,7 +1724,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944;
+  background-color: #000;
 }
 
 #logo {
@@ -1677,12 +1791,12 @@ POSTS & CONTENT STYLES
   border: 1px solid #ccc;
 }
 .hentry header {
-  border-bottom: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f6f6f6;
   padding: 1.5em;
 }
 .hentry footer {
   padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
+  border-top: 1px solid #f6f6f6;
 }
 .hentry footer p {
   margin: 0;
@@ -1706,7 +1820,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
+  color: #e4e4e4;
   font-style: italic;
   margin: 0;
 }
@@ -1725,33 +1839,33 @@ POSTS & CONTENT STYLES
 }
 .entry-content table {
   width: 100%;
-  border: 1px solid #eaedf2;
+  border: 1px solid #e4e4e4;
   margin-bottom: 1.5em;
 }
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
-  color: #9fa6b4;
+  color: #e4e4e4;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .entry-content tr {
-  border-bottom: 1px solid #eaedf2;
+  border-bottom: 1px solid #e4e4e4;
 }
 .entry-content tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #f6f6f6;
 }
 .entry-content td {
   padding: 7px;
-  border-right: 1px solid #eaedf2;
+  border-right: 1px solid #e4e4e4;
 }
 .entry-content td:last-child {
   border-right: 0;
 }
 .entry-content th {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #eaedf2;
-  border-right: 1px solid #eaedf2;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
 }
 .entry-content th:last-child {
   border-right: 0;
@@ -1759,9 +1873,9 @@ POSTS & CONTENT STYLES
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
-  border-left: 3px solid #2980b9;
+  border-left: 3px solid #0fb5ff;
   font-style: italic;
-  color: #9fa6b4;
+  color: #e4e4e4;
 }
 .entry-content dd {
   margin-left: 0;
@@ -1783,8 +1897,8 @@ POSTS & CONTENT STYLES
   height: auto;
 }
 .entry-content pre {
-  background: #323944;
-  color: #f8f9fa;
+  background: #000;
+  color: #f6f6f6;
   font-size: 0.9em;
   padding: 1.5em;
   margin: 0 0 1.5em;
@@ -1842,7 +1956,7 @@ PAGE NAVI STYLES
   float: left;
   display: inline;
   overflow: hidden;
-  border-right: 1px solid #eaedf2;
+  border-right: 1px solid #e4e4e4;
 }
 .pagination a, .pagination span {
   margin: 0;
@@ -1854,19 +1968,19 @@ PAGE NAVI STYLES
   padding: 0.75em;
   min-width: 1em;
   display: block;
-  color: #2980b9;
+  color: #0fb5ff;
 }
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #2980b9;
+  background-color: #0fb5ff;
   color: #fff;
 }
 .pagination .current {
   cursor: default;
-  color: #5c6b80;
+  color: #707070;
 }
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
-  color: #5c6b80;
+  color: #707070;
 }
 
 /* end .bones_page_navi */
@@ -1886,7 +2000,7 @@ COMMENT STYLES
 #comments-title {
   padding: 0.75em;
   margin: 0;
-  border-top: 1px solid #f8f9fa;
+  border-top: 1px solid #f6f6f6;
   /* number of comments span */
 }
 .commentlist {
@@ -1899,7 +2013,7 @@ COMMENT STYLES
   clear: both;
   overflow: hidden;
   padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f6f6f6;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
@@ -1922,7 +2036,7 @@ COMMENT STYLES
   font-style: italic;
 }
 .comment .vcard time a {
-  color: #9fa6b4;
+  color: #e4e4e4;
   text-decoration: none;
 }
 .comment .vcard time a:hover {
@@ -1957,7 +2071,7 @@ COMMENT STYLES
   background-color: #fff;
 }
 .comment.even {
-  background: #f8f9fa;
+  background: #f6f6f6;
 }
 /* comment meta */
 /* comment content */
@@ -1986,7 +2100,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
   padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
+  border-top: 1px solid #f6f6f6;
 }
 
 #reply-title {
@@ -1994,12 +2108,12 @@ COMMENT FORM STYLES
 }
 
 .logged-in-as {
-  color: #9fa6b4;
+  color: #e4e4e4;
   font-style: italic;
   margin: 0;
 }
 .logged-in-as a {
-  color: #5c6b80;
+  color: #707070;
 }
 
 .comment-form-comment {
@@ -2008,7 +2122,7 @@ COMMENT FORM STYLES
 
 .form-allowed-tags {
   padding: 1.5em;
-  background-color: #f8f9fa;
+  background-color: #f6f6f6;
   font-size: 0.9em;
 }
 
@@ -2055,8 +2169,8 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
-  color: #f8f9fa;
+  background-color: #000;
+  color: #f6f6f6;
 }
 
 /*
@@ -2202,7 +2316,7 @@ you can add resource intensive styles.
     /* end current highlighters */
   }
   .nav ul {
-    background: #323944;
+    background: #000;
     margin-top: 0;
   }
   .nav li {
