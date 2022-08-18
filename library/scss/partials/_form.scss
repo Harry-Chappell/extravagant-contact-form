@@ -63,5 +63,60 @@
         }
     }
 
+
+    #who-are-you {
+        position: relative;
+        height: 600px;
+
+        img.image-my-name-is {
+            position: absolute;
+            box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+            border-radius: 25px;
+            
+            &:nth-of-type(7) {
+                height: 300px;
+                top: 150px;
+                right: 350px;
+                transform: rotate(5deg);
+            }
+            &:nth-of-type(6) {
+                height: 250px;
+                top: 175px;
+                right: 300px;
+                transform: rotate(-5deg);
+            }
+            &:nth-of-type(5) {
+                height: 200px;
+                top: 150px;
+                right: 250px;
+                transform: rotate(7.5deg);
+            }
+            &:nth-of-type(4) {
+                height: 175px;
+                top: 150px;
+                right: 200px;
+                transform: rotate(-2.5deg);
+            }
+            &:nth-of-type(3) {
+                height: 150px;
+                top: 175px;
+                right: 150px;
+                transform: rotate(5deg);
+            }
+            &:nth-of-type(2) {
+                height: 125px;
+                top: 100px;
+                right: 100px;
+                transform: rotate(-7.5deg);
+            }
+            &:nth-of-type(1) {
+                height: 100px;
+                top: 75px;
+                right: 50px;
+                transform: rotate(2.5deg);
+            }
+        }
+    }
+
 }
 

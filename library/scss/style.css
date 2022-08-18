@@ -891,6 +891,121 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+.page-template-page-form {
+  background-color: #fff;
+}
+.page-template-page-form header.header,
+.page-template-page-form footer.footer {
+  display: none;
+}
+.page-template-page-form #content {
+  margin: 0;
+}
+.page-template-page-form h1 {
+  color: #000;
+  font-family: "Times New Roman", Times, "Georgia", Cambria, Times New Roman, Times, serif;
+  font-size: 80px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.page-template-page-form h2 {
+  font-size: 80px;
+  margin: 0 0 50px;
+}
+.page-template-page-form section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.page-template-page-form button.submit {
+  width: 100%;
+  padding: 50px 0;
+  font-size: 200px;
+  border: 0;
+  text-shadow: 0 0 25px yellow;
+}
+.page-template-page-form label {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 100%;
+  width: 400px;
+  margin-bottom: -15px;
+  font-size: 40px;
+  display: flex;
+}
+.page-template-page-form input {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 0;
+  height: 75px;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 100%;
+  width: 400px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  text-indent: 25px;
+  display: flex;
+}
+.page-template-page-form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.page-template-page-form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.page-template-page-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.page-template-page-form #who-are-you {
+  position: relative;
+  height: 600px;
+}
+.page-template-page-form #who-are-you img.image-my-name-is {
+  position: absolute;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(7) {
+  height: 300px;
+  top: 150px;
+  right: 350px;
+  transform: rotate(5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(6) {
+  height: 250px;
+  top: 175px;
+  right: 300px;
+  transform: rotate(-5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(5) {
+  height: 200px;
+  top: 150px;
+  right: 250px;
+  transform: rotate(7.5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(4) {
+  height: 175px;
+  top: 150px;
+  right: 200px;
+  transform: rotate(-2.5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(3) {
+  height: 150px;
+  top: 175px;
+  right: 150px;
+  transform: rotate(5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(2) {
+  height: 125px;
+  top: 100px;
+  right: 100px;
+  transform: rotate(-7.5deg);
+}
+.page-template-page-form #who-are-you img.image-my-name-is:nth-of-type(1) {
+  height: 100px;
+  top: 75px;
+  right: 50px;
+  transform: rotate(2.5deg);
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -922,7 +1037,7 @@ over your project's layout.
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /*
@@ -933,7 +1048,7 @@ them however you see fit.
 */
 @media (max-width: 767px) {
   .m-hide {
-    display: none;
+    display: none !important;
   }
   .m-all {
     float: left;
@@ -970,7 +1085,7 @@ them however you see fit.
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
   .t-hide {
-    display: none;
+    display: none !important;
   }
   .t-all {
     float: left;
@@ -1027,7 +1142,7 @@ them however you see fit.
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
   .d-hide {
-    display: none;
+    display: none !important;
   }
   .d-all {
     float: left;
@@ -1141,70 +1256,6 @@ them however you see fit.
     width: 8.33%;
   }
 }
-.page-template-page-form {
-  background-color: #fff;
-}
-.page-template-page-form header.header,
-.page-template-page-form footer.footer {
-  display: none;
-}
-.page-template-page-form #content {
-  margin: 0;
-}
-.page-template-page-form h1 {
-  color: #000;
-  font-family: "Times New Roman", Times, "Georgia", Cambria, Times New Roman, Times, serif;
-  font-size: 80px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-}
-.page-template-page-form h2 {
-  font-size: 80px;
-  margin: 0 0 50px;
-}
-.page-template-page-form section {
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-.page-template-page-form button.submit {
-  width: 100%;
-  padding: 50px 0;
-  font-size: 200px;
-  border: 0;
-  text-shadow: 0 0 25px yellow;
-}
-.page-template-page-form label {
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 100%;
-  width: 400px;
-  margin-bottom: -15px;
-  font-size: 40px;
-  display: flex;
-}
-.page-template-page-form input {
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 0;
-  height: 75px;
-  border-radius: 0;
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 100%;
-  width: 400px;
-  margin-bottom: 25px;
-  font-size: 40px;
-  text-indent: 25px;
-  display: flex;
-}
-.page-template-page-form input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.page-template-page-form input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.page-template-page-form input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.

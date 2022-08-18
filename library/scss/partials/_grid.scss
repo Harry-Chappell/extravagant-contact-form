@@ -38,7 +38,7 @@ over your project's layout.
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 /*
 Mobile Grid Styles
@@ -49,7 +49,7 @@ them however you see fit.
 @media (max-width: 767px) {
 
   .m-hide {
-    display: none;
+    display: none !important;
   }
 
   .m-all {
@@ -90,7 +90,7 @@ them however you see fit.
 @media (min-width: 768px) and (max-width: 1029px) {
 
   .t-hide {
-    display: none;
+    display: none !important;
   }
 
   .t-all {
@@ -150,7 +150,7 @@ them however you see fit.
 @media (min-width: 1030px) {
 
   .d-hide {
-    display: none;
+    display: none !important;
   }
 
   .d-all  {
