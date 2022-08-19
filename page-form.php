@@ -117,20 +117,20 @@
 
 				<label for="week">Holiday (must be a week in the summer holidays):</label>
 				<input type="week" name="week" id="camp-week" min="2022-W29" max="2022-W35">
-
-				<label for="url">Enter an https:// URL:</label>
-
-				<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
 				
-				<input type="submit" value="Submit" class="button medium">
-
-			</form>
-
-			<form action="#" method="get">
-
-				<section id="who-are-you" 	class="wrap background-yellow">
-					<h2 class="font-prisma color-black">Who are you?</h2>
-
+				<label for="url">Enter an https:// URL:</label>
+					
+					<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+					
+					<input type="submit" value="Submit" class="button medium">
+					
+				</form>
+				
+				<form action="#" method="get">
+					
+					<section id="who-are-you" 	class="wrap background-yellow">
+						<h2 class="font-prisma color-black">Who are you?</h2>
+						
 					<label for="full-name" class="hide">Full Name</label>
 					<input type="text" id="full-name" name="full-name" placeholder="Slim Shady" class="font-besom">
 					
@@ -141,11 +141,45 @@
 					<img class="image-my-name-is" src="/wp-content/uploads/my-name-is-min.png" alt="Hello my name is...">
 					<img class="image-my-name-is" src="/wp-content/uploads/my-name-is-min.png" alt="Hello my name is...">
 					<img class="image-my-name-is" src="/wp-content/uploads/my-name-is-min.png" alt="Hello my name is...">
-
+					
 				</section>
-
+				
 				<section id="contact" 		class="wrap background-red">
 					<h2 class="font-abril-fatface color-yellow">How do we contact you?</h2>
+					
+					<div class="contact-options-control">
+						<div class="contact-options-control--phone phone" onclick="contactActivate('phone')" href=""><i class="fa-solid fa-phone"></i></div>
+						<div class="contact-options-control--email email" onclick="contactActivate('email')" href=""><i class="fa-solid fa-envelope"></i></div>
+						<div class="contact-options-control--whatsapp whatsapp" onclick="contactActivate('whatsapp')" href=""><i class="fa-brands fa-whatsapp"></i></div>
+						<div class="contact-options-control--messenger messenger" onclick="contactActivate('messenger')" href=""><i class="fa-brands fa-facebook-messenger"></i></i></div>
+						<div class="contact-options-control--linkedin linkedin" onclick="contactActivate('linkedin')" href=""><i class="fa-brands fa-linkedin"></i></div>
+						<div class="contact-options-control--snapchat snapchat" onclick="contactActivate('snapchat')" href=""><i class="fa-brands fa-snapchat"></i></div>
+					</div>
+
+					<script>
+						function contactActivate(value) {
+							let nodes = document.getElementsByClassName(value);
+							for (let i = 0; i < nodes.length; i++) {
+								nodes[i].classList.toggle('active');
+							}
+						}
+					</script>
+					
+					<div class="contact-options-inputs">
+						<label id ="contact-phone-label" class="phone" for="phone">Phone Number</label>
+						<input id ="contact-phone-input" class="phone" type="phone" name="phone">
+						<label id ="contact-email-label" class="email" for="email">Email Address</label>
+						<input id ="contact-email-input" class="email" type="email" name="email">
+						<label id ="contact-whatsapp-label" class="whatsapp" for="whatsapp">Whatsapp</label>
+						<input id ="contact-whatsapp-input" class="whatsapp" type="url" name="whatsapp">
+						<label id ="contact-messenger-label" class="messenger" for="messenger">Messenger</label>
+						<input id ="contact-messenger-input" class="messenger" type="url" name="messenger">
+						<label id ="contact-linkedin-label" class="linkedin" for="linkedin">Linkedin</label>
+						<input id ="contact-linkedin-input" class="linkedin" type="url" name="linkedin">
+						<label id ="contact-snapchat-label" class="snapchat" for="snapchat">Snapchat</label>
+						<input id ="contact-snapchat-input" class="snapchat" type="url" name="snapchat">
+					</div>
+
 				</section>
 
 				<section id="sport-shirt" 	class="wrap background-blue">

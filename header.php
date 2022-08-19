@@ -33,6 +33,8 @@
         
         
         
+        <!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/e4c66c7e6d.js" crossorigin="anonymous"></script>
 
 
         
