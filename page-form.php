@@ -148,12 +148,12 @@
 					<h2 class="font-abril-fatface color-yellow">How do we contact you?</h2>
 					
 					<div class="contact-options-control">
-						<div class="contact-options-control--phone phone" onclick="contactActivate('phone')" href=""><i class="fa-solid fa-phone"></i></div>
-						<div class="contact-options-control--email email" onclick="contactActivate('email')" href=""><i class="fa-solid fa-envelope"></i></div>
-						<div class="contact-options-control--whatsapp whatsapp" onclick="contactActivate('whatsapp')" href=""><i class="fa-brands fa-whatsapp"></i></div>
-						<div class="contact-options-control--messenger messenger" onclick="contactActivate('messenger')" href=""><i class="fa-brands fa-facebook-messenger"></i></i></div>
-						<div class="contact-options-control--linkedin linkedin" onclick="contactActivate('linkedin')" href=""><i class="fa-brands fa-linkedin"></i></div>
-						<div class="contact-options-control--snapchat snapchat" onclick="contactActivate('snapchat')" href=""><i class="fa-brands fa-snapchat"></i></div>
+						<button type="button" class="contact-options-control--phone phone" onclick="contactActivate('phone')" href=""><i class="fa-solid fa-phone"></i></button>
+						<button type="button" class="contact-options-control--email email" onclick="contactActivate('email')" href=""><i class="fa-solid fa-envelope"></i></button>
+						<button type="button" class="contact-options-control--whatsapp whatsapp" onclick="contactActivate('whatsapp')" href=""><i class="fa-brands fa-whatsapp"></i></button>
+						<button type="button" class="contact-options-control--messenger messenger" onclick="contactActivate('messenger')" href=""><i class="fa-brands fa-facebook-messenger"></i></i></button>
+						<button type="button" class="contact-options-control--linkedin linkedin" onclick="contactActivate('linkedin')" href=""><i class="fa-brands fa-linkedin"></i></button>
+						<button type="button" class="contact-options-control--snapchat snapchat" onclick="contactActivate('snapchat')" href=""><i class="fa-brands fa-snapchat"></i></button>
 					</div>
 
 					<script>
@@ -166,18 +166,33 @@
 					</script>
 					
 					<div class="contact-options-inputs">
-						<label id ="contact-phone-label" class="phone" for="phone">Phone Number</label>
-						<input id ="contact-phone-input" class="phone" type="phone" name="phone">
-						<label id ="contact-email-label" class="email" for="email">Email Address</label>
-						<input id ="contact-email-input" class="email" type="email" name="email">
-						<label id ="contact-whatsapp-label" class="whatsapp" for="whatsapp">Whatsapp</label>
-						<input id ="contact-whatsapp-input" class="whatsapp" type="url" name="whatsapp">
-						<label id ="contact-messenger-label" class="messenger" for="messenger">Messenger</label>
-						<input id ="contact-messenger-input" class="messenger" type="url" name="messenger">
-						<label id ="contact-linkedin-label" class="linkedin" for="linkedin">Linkedin</label>
-						<input id ="contact-linkedin-input" class="linkedin" type="url" name="linkedin">
-						<label id ="contact-snapchat-label" class="snapchat" for="snapchat">Snapchat</label>
-						<input id ="contact-snapchat-input" class="snapchat" type="url" name="snapchat">
+						<div class="phone">
+							<label id ="contact-phone-label" for="phone">Phone Number</label>
+							<input id ="contact-phone-input" type="phone" name="phone" placeholder="0123 456 7890">
+						</div>
+						<div class="email">
+							<label id ="contact-email-label" for="email">Email Address</label>
+							<input id ="contact-email-input" type="email" name="email" placeholder="email@email.address">
+						</div>
+						<div class="whatsapp">
+							<label id ="contact-whatsapp-label" for="whatsapp">Whatsapp</label>
+							<input id ="contact-whatsapp-input" type="url" name="whatsapp" placeholder="07777 111 222">
+						</div>
+						<div class="messenger has-prefix">
+							<label id ="contact-messenger-label" for="messenger">Messenger</label>
+							<span class="prefix">https://messenger.com/</span>
+							<input id ="contact-messenger-input" type="url" name="messenger"  placeholder="john-doe">
+						</div>
+						<div class="linkedin has-prefix">
+							<label id ="contact-linkedin-label" for="linkedin">Linkedin</label>
+							<span class="prefix">https://linkedin.com/in/</span>
+							<input id ="contact-linkedin-input" type="url" name="linkedin" placeholder="john-doe">
+						</div>
+						<div class="snapchat has-prefix">
+							<label id ="contact-snapchat-label" for="snapchat">Snapchat</label>
+							<span class="prefix">https://snapchat.com/</span>
+							<input id ="contact-snapchat-input" type="url" name="snapchat" placeholder="john-doe">
+						</div>
 					</div>
 
 				</section>

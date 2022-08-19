@@ -928,21 +928,21 @@ probably best not to use it. I mean, were you going to anyway? */
   color: rgba(255, 255, 255, 0.85);
   max-width: 100%;
   width: 400px;
-  margin-bottom: -15px;
-  font-size: 40px;
+  margin-bottom: -11px;
+  font-size: 30px;
   display: flex;
 }
 .page-template-page-form input {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 0;
-  height: 75px;
+  height: 60px;
   border-radius: 0;
   color: rgba(255, 255, 255, 0.85);
-  max-width: 100%;
-  width: 400px;
-  margin-bottom: 25px;
-  font-size: 40px;
-  text-indent: 25px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-indent: 15px;
   display: flex;
 }
 .page-template-page-form input::-moz-placeholder {
@@ -1063,6 +1063,13 @@ probably best not to use it. I mean, were you going to anyway? */
 .page-template-page-form #who-are-you input#full-name:focus ~ img.image-my-name-is:nth-of-type(7) {
   transform: translateX(-50%) rotate(0deg);
 }
+.page-template-page-form #contact {
+  display: flex;
+  flex-flow: row wrap;
+}
+.page-template-page-form #contact h2 {
+  width: 100%;
+}
 .page-template-page-form #contact .contact-options-control {
   display: flex;
   flex-flow: row wrap;
@@ -1085,8 +1092,9 @@ probably best not to use it. I mean, were you going to anyway? */
   position: absolute;
   border-radius: 50px;
 }
-.page-template-page-form #contact .contact-options-control div {
+.page-template-page-form #contact .contact-options-control button {
   width: 75px;
+  border: 0px;
   height: 75px;
   border-radius: 100%;
   position: relative;
@@ -1101,45 +1109,94 @@ probably best not to use it. I mean, were you going to anyway? */
   transition: 0.1s;
   background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1) 75%);
 }
-.page-template-page-form #contact .contact-options-control div:after {
+.page-template-page-form #contact .contact-options-control button:after, .page-template-page-form #contact .contact-options-control button:before {
   transition: 0.1s;
   content: " ";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25);
   position: absolute;
   border-radius: 100%;
 }
-.page-template-page-form #contact .contact-options-control div:hover {
+.page-template-page-form #contact .contact-options-control button:after {
+  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25);
+}
+.page-template-page-form #contact .contact-options-control button:before {
+  z-index: -1;
+  transition: 0.5s;
+  background: radial-gradient(#35ff24, rgba(255, 255, 255, 0.75) 70%);
+  opacity: 0;
+}
+.page-template-page-form #contact .contact-options-control button:hover {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
 }
-.page-template-page-form #contact .contact-options-control div:hover:after {
+.page-template-page-form #contact .contact-options-control button:hover:after {
   box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.25);
 }
-.page-template-page-form #contact .contact-options-control div:active, .page-template-page-form #contact .contact-options-control div.active:active {
+.page-template-page-form #contact .contact-options-control button:active, .page-template-page-form #contact .contact-options-control button.active:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-.page-template-page-form #contact .contact-options-control div:active:after, .page-template-page-form #contact .contact-options-control div.active:active:after {
+.page-template-page-form #contact .contact-options-control button:active:after, .page-template-page-form #contact .contact-options-control button.active:active:after {
   box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.25);
 }
-.page-template-page-form #contact .contact-options-control div.active {
+.page-template-page-form #contact .contact-options-control button.active {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
-  background: radial-gradient(rgba(53, 255, 36, 0.75), rgba(255, 255, 255, 0.5) 70%);
 }
-.page-template-page-form #contact .contact-options-control div.active:after {
+.page-template-page-form #contact .contact-options-control button.active:before {
+  opacity: 0.75;
+}
+.page-template-page-form #contact .contact-options-control button.active:after {
   box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.25);
 }
-.page-template-page-form #contact .contact-options-inputs label, .page-template-page-form #contact .contact-options-inputs input {
-  transition: 0.5s;
-  max-height: 100px;
+.page-template-page-form #contact .contact-options-control button.active:hover:before {
   opacity: 1;
 }
-.page-template-page-form #contact .contact-options-inputs label:not(.active),
-.page-template-page-form #contact .contact-options-inputs label:not(.active) + input {
+.page-template-page-form #contact .contact-options-inputs {
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 310px);
+  padding-left: 25px;
+}
+.page-template-page-form #contact .contact-options-inputs > div {
+  width: 50%;
+  padding-left: 25px;
+  transition: 0.5s;
+  max-height: 100px;
+  max-width: 500px;
+  opacity: 1;
+  transform: scale(1);
+}
+.page-template-page-form #contact .contact-options-inputs > div:not(.active) {
+  padding-left: 0px;
   max-height: 0;
+  max-width: 0;
   opacity: 0;
+  transform: scale(0);
+}
+.page-template-page-form #contact .contact-options-inputs > div.has-prefix {
+  display: flex;
+  flex-flow: row wrap;
+}
+.page-template-page-form #contact .contact-options-inputs > div.has-prefix label {
+  width: 100%;
+}
+.page-template-page-form #contact .contact-options-inputs > div.has-prefix input {
+  flex: 1;
+}
+.page-template-page-form #contact .contact-options-inputs > div span.prefix {
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-indent: 15px;
+}
+.page-template-page-form #contact .contact-options-inputs > div span.prefix + input {
+  text-indent: 0;
 }
 
 /******************************************************************
