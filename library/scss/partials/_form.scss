@@ -71,52 +71,110 @@
         img.image-my-name-is {
             position: absolute;
             box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-            border-radius: 25px;
+            transition: 0.5s cubic-bezier(1, 0, 0.75, 1.5);
             
             &:nth-of-type(7) {
                 height: 300px;
-                top: 150px;
-                right: 350px;
-                transform: rotate(5deg);
+                top: 170px;
+                left: 30%;
+                border-radius: 25px;
+                transform: translateX(-50%) rotate(5deg);
             }
             &:nth-of-type(6) {
                 height: 250px;
                 top: 175px;
-                right: 300px;
-                transform: rotate(-5deg);
+                left: 45%;
+                border-radius: 20px;
+                transform: translateX(-50%) rotate(-5deg);
             }
             &:nth-of-type(5) {
                 height: 200px;
-                top: 150px;
-                right: 250px;
-                transform: rotate(7.5deg);
+                top: 170px;
+                left: 60%;
+                border-radius: 15px;
+                transform: translateX(-50%) rotate(7.5deg);
             }
             &:nth-of-type(4) {
                 height: 175px;
-                top: 150px;
-                right: 200px;
-                transform: rotate(-2.5deg);
+                top: 180px;
+                left: 68%;
+                border-radius: 13px;
+                transform: translateX(-50%) rotate(-2.5deg);
             }
             &:nth-of-type(3) {
                 height: 150px;
-                top: 175px;
-                right: 150px;
-                transform: rotate(5deg);
+                top: 165px;
+                left: 76%;
+                border-radius: 10px;
+                transform: translateX(-50%) rotate(5deg);
             }
             &:nth-of-type(2) {
                 height: 125px;
-                top: 100px;
-                right: 100px;
-                transform: rotate(-7.5deg);
+                top: 140px;
+                left: 82%;
+                border-radius: 7px;
+                transform: translateX(-50%) rotate(-7.5deg);
             }
             &:nth-of-type(1) {
                 height: 100px;
-                top: 75px;
-                right: 50px;
-                transform: rotate(2.5deg);
+                top: 125px;
+                left: 88%;
+                border-radius: 6px;
+                transform: translateX(-50%) rotate(2.5deg);
+            }
+        }
+
+        input#full-name {
+            position: absolute;
+            z-index: 1;
+            background: none;
+            transform: translateX(-50%) rotate(-8deg);
+            left: 30%;
+            width: 450px;
+            top: 262px;
+            height: 187px;
+            padding: 0;
+            margin: 0;
+            text-indent: 0;
+            text-align: center;
+            font-size: 4em;
+            color: $black;
+            transition: all 0.5s cubic-bezier(1, 0, 0.75, 1.5), background 0s;
+
+            &::placeholder {
+                color: rgba($black, 0.5);
+            }
+
+            &:focus {
+                transform: translateX(-50%) rotate(0deg);
+                left: 50%;
+                width: 525px;
+                top: 278px;
+                height: 217px;
+                outline: none;
+
+                ~ img.image-my-name-is:nth-of-type(7) {
+                    height: 350px;
+                    top: 170px;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(0deg);
+                }
             }
         }
     }
 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background: black;
+  transition: background-color 0s;
 }
 
