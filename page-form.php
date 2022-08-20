@@ -360,9 +360,11 @@
 
 				</section>
 
-				<section id="wakeup-alarm" 	class="wrap background-midnight">
+				<!-- <section id="wakeup-alarm" 	class="wrap background-midnight">
 					<h2 class="font-krungthep color-white">When would you like your wakeup alarm set?</h2>
-				</section>
+
+
+				</section> -->
 
 				<button class="submit font-budmo-jigglish background-pink color-white">Submit</button>
 			</form>

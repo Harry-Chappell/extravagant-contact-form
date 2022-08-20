@@ -34,7 +34,19 @@
         padding: 50px 0;
         font-size: 200px;
         border: 0;
-        text-shadow: 0 0 25px yellow;
+        background-image: url(http://localhost:10018/wp-content/uploads/submit-min.png);
+        background-size: 100px;
+        transition: background-size 0.25s;
+        background-position: center;
+        
+        &:hover, &:focus {
+            text-shadow: 0 0 25px $yellow;
+            background-size: 125px;
+        }
+        &:active {
+            text-shadow: 0 0 25px $white;
+            background-size: 150px;
+        }
     }
 
     label {
@@ -640,6 +652,14 @@
         }
         #raphael:checked ~ label {
             background-color: #e03421;
+        }
+    }
+
+    #wakeup-alarm {
+
+        h2 {
+            font-size: 50px;
+            line-height: 1;
         }
     }
 }
