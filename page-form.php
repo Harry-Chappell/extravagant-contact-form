@@ -112,9 +112,7 @@
 					
 				</fieldset>
 
-				<label for="appt">When would you like your bedtime?</label>
-				<input type="time" id="appt" name="appt" min="19:00" max="23:59">
-
+				
 				<label for="week">Holiday (must be a week in the summer holidays):</label>
 				<input type="week" name="week" id="camp-week" min="2022-W29" max="2022-W35">
 				
@@ -130,7 +128,7 @@
 					
 				<section id="who-are-you" 	class="wrap background-yellow">
 					<h2 class="font-prisma color-black">Who are you?</h2>
-						
+					
 					<label for="full-name" class="hide">Full Name</label>
 					<input type="text" id="full-name" name="full-name" placeholder="Slim Shady" class="font-besom">
 					
@@ -155,7 +153,7 @@
 						<button type="button" class="contact-options-control--linkedin linkedin" onclick="contactActivate('linkedin')" href=""><i class="fa-brands fa-linkedin"></i></button>
 						<button type="button" class="contact-options-control--snapchat snapchat" onclick="contactActivate('snapchat')" href=""><i class="fa-brands fa-snapchat"></i></button>
 					</div>
-
+					
 					<script>
 						function contactActivate(value) {
 							let nodes = document.getElementsByClassName(value);
@@ -199,7 +197,7 @@
 
 				<section id="sport-shirt" 	class="wrap background-blue">
 					<h2 class="font-rush-brush color-dark-blue">What's your desired sport and shirt number?</h2>
-
+					
 					<label for="sport" class="hide">Sport of Choice:</label>
 					<select name="sport" id="sport-select" oninput="selectClass(this.value)">
 						<option value="" class="placeholder" selected disabled hidden>Select</option>
@@ -243,7 +241,7 @@
 							<i class="fa-solid fa-futbol"></i>
 						</div>
 					</div>
-
+					
 					<script>
 						function selectClass(value) {
 							document.getElementById("balls").setAttribute("class", value);
@@ -252,7 +250,7 @@
 					<script>
 						jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div><div class="quantity-button quantity-down"></div></div>').insertAfter('.shirt input');
 						jQuery('.shirt').each(function() {
-						var spinner = jQuery(this),
+							var spinner = jQuery(this),
 							input = spinner.find('input[type="number"]'),
 							btnUp = spinner.find('.quantity-up'),
 							btnDown = spinner.find('.quantity-down'),
@@ -262,82 +260,82 @@
 						btnUp.click(function() {
 							var oldValue = parseFloat(input.val());
 							if (oldValue >= max) {
-							var newVal = oldValue;
+								var newVal = oldValue;
 							} else {
 							var newVal = oldValue + 1;
 							}
 							spinner.find("input").val(newVal);
 							spinner.find("input").trigger("change");
 						});
-
+						
 						btnDown.click(function() {
 							var oldValue = parseFloat(input.val());
 							if (oldValue <= min) {
-							var newVal = oldValue;
+								var newVal = oldValue;
 							} else {
-							var newVal = oldValue - 1;
+								var newVal = oldValue - 1;
 							}
 							spinner.find("input").val(newVal);
 							spinner.find("input").trigger("change");
 						});
-
-						});
+						
+					});
 					</script>
 				</section>
-
+				
 				<section id="audio" 		class="wrap background-purple">
 					<h2 class="font-leira color-white">What're your audio prefrences?</h2>
-
+					
 					<div>
 						<label for="quality">Quality</label>
 						<input type="range" id="quality" name="quality" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
 						<output id="rangevalue" class="percentage">50</output>
 					</div>
-
+					
 					<div>
 						<label for="rudeness">Rudeness</label>
 						<input type="range" id="rudeness" name="rudeness" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
 						<output id="rangevalue" class="percentage">50</output>
 					</div>
-
+					
 					<div>
 						<label for="humour">Humour</label>
 						<input type="range" id="humour" name="humour" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
 						<output id="rangevalue" class="percentage">50</output>
 					</div>
-
+					
 					<div>
 						<label for="decade">Decade</label>
 						<input type="range" step="10" id="decade" name="decade" min="1920" max="2020" value="1980" list="tickmarks-decade" oninput="this.nextElementSibling.value = this.value">
 						<output>1980</output>
 					</div>
-
-
+					
+					
 					<script>
 						const rangeInputs = document.querySelectorAll('input[type="range"]')
 						const numberInput = document.querySelector('input[type="number"]')
-
+						
 						function handleInputChange(e) {
-						let target = e.target
-						if (e.target.type !== 'range') {
-							target = document.getElementById('range')
-						} 
-						const min = target.min
+							let target = e.target
+							if (e.target.type !== 'range') {
+								target = document.getElementById('range')
+							} 
+							const min = target.min
 						const max = target.max
 						const val = target.value
 						
 						target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
-						}
-
-						rangeInputs.forEach(input => {
+					}
+					
+					rangeInputs.forEach(input => {
 						input.addEventListener('input', handleInputChange)
-						})
-
-						numberInput.addEventListener('input', handleInputChange)
+					})
+					
+					numberInput.addEventListener('input', handleInputChange)
 					</script>
 					
 				</section>
-
+				
 				<section id="turtles" 		class=" background-green">
 					<h2 class="wrap font-awery color-white">Which is the best turtle?</h2>
 					
@@ -357,20 +355,48 @@
 						<input type="radio" id="raphael" name="turtle" value="Raphael">
 						<label for="raphael">Raphael</label>
 					</div>
-
+					
 				</section>
-
-				<!-- <section id="wakeup-alarm" 	class="wrap background-midnight">
+				
+				<section id="wakeup-alarm" 	class="wrap background-midnight">
 					<h2 class="font-krungthep color-white">When would you like your wakeup alarm set?</h2>
+					
+					<i class="fa-solid fa-cloud"></i>
+					<i class="fa-solid fa-cloud"></i>
+					<i class="fa-solid fa-cloud"></i>
+					<i class="fa-solid fa-cloud"></i>
+					<i class="fa-solid fa-cloud-moon"></i>
+					
+					<div class="alarm">
+						<label for="alarm" class="hide">Alarm Time</label>
+						<input type="time" id="alarm" name="alarm" class="font-ds-digital" value="06:00">
+					</div>
 
-
-				</section> -->
-
+					<h3>Every:</h3>
+					<div class="week">
+						<input type="checkbox" id="monday" name="monday" value="Monday">
+						<label for="monday">Monday</label>
+						<input type="checkbox" id="tuesday" name="tuesday" value="Tuesday">
+						<label for="tuesday">Tuesday</label>
+						<input type="checkbox" id="wednesday" name="wednesday" value="Wednesday">
+						<label for="wednesday">Wednesday</label>
+						<input type="checkbox" id="thursday" name="thursday" value="Thursday">
+						<label for="thursday">Thursday</label>
+						<input type="checkbox" id="friday" name="friday" value="Friday">
+						<label for="friday">Friday</label>
+						<input type="checkbox" id="saturday" name="saturday" value="Saturday">
+						<label for="saturday">Saturday</label>
+						<input type="checkbox" id="sunday" name="sunday" value="Sunday">
+						<label for="sunday">Sunday</label>
+					</div>
+					
+				</section>
+				
 				<button class="submit font-budmo-jigglish background-pink color-white">Submit</button>
 			</form>
-
+			
 		</main>
-
+		
 	</div>
 
 </div>
