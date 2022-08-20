@@ -1322,6 +1322,94 @@ probably best not to use it. I mean, were you going to anyway? */
   left: 25%;
   transform: rotate(-45deg);
 }
+.page-template-page-form #audio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.page-template-page-form #audio div {
+  position: relative;
+  width: calc((100% - 50px) / 2);
+  margin-bottom: 25px;
+  /* Input Thumb */
+  /* Input Track */
+}
+.page-template-page-form #audio div label {
+  justify-content: center;
+  width: 100%;
+}
+.page-template-page-form #audio div input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: none;
+}
+.page-template-page-form #audio div input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.page-template-page-form #audio div input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.page-template-page-form #audio div input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.page-template-page-form #audio div input[type=range]::-webkit-slider-thumb:hover,
+.page-template-page-form #audio div input[type=range]::-moz-range-thumb:hover,
+.page-template-page-form #audio div input[type=range]::-ms-thumb:hover {
+  background: #ff0200;
+}
+.page-template-page-form #audio div input[type=range]::-webkit-slider-runnable-track,
+.page-template-page-form #audio div input[type=range]::-moz-range-track,
+.page-template-page-form #audio div input[type=range]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.page-template-page-form #audio div output {
+  color: #fff;
+  position: absolute;
+  bottom: 37.5px;
+  transform: translateY(50%);
+  left: 25px;
+  z-index: 0;
+}
+.page-template-page-form #audio div output.percentage:after {
+  content: "%";
+}
 
 /******************************************************************
 Site Name:

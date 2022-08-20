@@ -287,6 +287,55 @@
 
 				<section id="audio" 		class="wrap background-purple">
 					<h2 class="font-leira color-white">What're your audio prefrences?</h2>
+
+					<div>
+						<label for="quality">Quality</label>
+						<input type="range" id="quality" name="quality" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+						<output id="rangevalue" class="percentage">50</output>
+					</div>
+
+					<div>
+						<label for="rudeness">Rudeness</label>
+						<input type="range" id="rudeness" name="rudeness" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+						<output id="rangevalue" class="percentage">50</output>
+					</div>
+
+					<div>
+						<label for="humour">Humour</label>
+						<input type="range" id="humour" name="humour" value="50" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+						<output id="rangevalue" class="percentage">50</output>
+					</div>
+
+					<div>
+						<label for="decade">Decade</label>
+						<input type="range" step="10" id="decade" name="decade" min="1920" max="2020" value="1980" list="tickmarks-decade" oninput="this.nextElementSibling.value = this.value">
+						<output>1980</output>
+					</div>
+
+
+					<script>
+						const rangeInputs = document.querySelectorAll('input[type="range"]')
+						const numberInput = document.querySelector('input[type="number"]')
+
+						function handleInputChange(e) {
+						let target = e.target
+						if (e.target.type !== 'range') {
+							target = document.getElementById('range')
+						} 
+						const min = target.min
+						const max = target.max
+						const val = target.value
+						
+						target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+						}
+
+						rangeInputs.forEach(input => {
+						input.addEventListener('input', handleInputChange)
+						})
+
+						numberInput.addEventListener('input', handleInputChange)
+					</script>
+					
 				</section>
 
 				<section id="turtles" 		class="wrap background-green">
