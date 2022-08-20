@@ -46,7 +46,7 @@
 				<option value="swimming">Swimming</option>
 				</select>
 
-				<fieldset class="turtles d-1of2 t-1of2 m-all">
+				<!-- <fieldset class="turtles d-1of2 t-1of2 m-all">
 					<legend>Best Turtle</legend>
 					
 					<div>
@@ -65,10 +65,10 @@
 					</div>
 					
 					<div>
-					<input class="red" type="radio" id="raphael" name="turtle" value="raphael">
-					<label for="raphael">Raphael</label>
+						<input class="red" type="radio" id="raphael" name="turtle" value="raphael">
+						<label for="raphael">Raphael</label>
 					</div>
-				</fieldset>
+				</fieldset> -->
 				
 				<fieldset class="Audio Prefrences d-1of2 t-1of2 m-all">
 					<legend>Audio Prefrences</legend>
@@ -338,8 +338,26 @@
 					
 				</section>
 
-				<section id="turtles" 		class="wrap background-green">
-					<h2 class="font-awery color-white">Which is the best turtle?</h2>
+				<section id="turtles" 		class=" background-green">
+					<h2 class="wrap font-awery color-white">Which is the best turtle?</h2>
+					
+					<div class="wrap">
+						<input type="radio" id="leonardo" name="turtle" value="Leonardo">
+						<label for="leonardo">Leonardo</label>
+					</div>
+					<div class="wrap">
+						<input type="radio" id="michelangelo" name="turtle" value="Michelangelo">
+						<label for="michelangelo">Michelangelo</label>
+					</div>
+					<div class="wrap">
+						<input type="radio" id="donatello" name="turtle" value="Donatello">
+						<label for="donatello">Donatello</label>
+					</div>
+					<div class="wrap">
+						<input type="radio" id="raphael" name="turtle" value="Raphael">
+						<label for="raphael">Raphael</label>
+					</div>
+
 				</section>
 
 				<section id="wakeup-alarm" 	class="wrap background-midnight">
