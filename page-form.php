@@ -372,7 +372,6 @@
 						<input type="time" id="alarm" name="alarm" class="font-ds-digital" value="06:00">
 					</div>
 
-					<h3>Every:</h3>
 					<div class="week">
 						<input type="checkbox" id="monday" name="monday" value="Monday">
 						<label for="monday">Monday</label>

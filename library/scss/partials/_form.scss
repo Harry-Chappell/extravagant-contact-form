@@ -605,10 +605,14 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            text-indent: 160px;
+            text-indent: 100px + 50px + 10px;
 
             &:hover {
                 background-color: rgba($white, 0.1);
+            }
+
+            @media screen and (min-width: 1280px) {
+                text-indent: calc(((100vw - 1180px) / 2) + 50px + 10px);
             }
         }
 
@@ -769,6 +773,44 @@
                     background-color: rgba($white, 0.1);
                 }
             }
+        }
+    }
+
+
+
+    @media screen and (max-width: 1280px) {
+        h1, h2 {
+            font-size: 70px;
+        }
+    }
+    @media screen and (max-width: 1030px) {
+        h1, h2 {
+            font-size: 60px;
+        }
+
+        #who-are-you img.image-my-name-is:nth-of-type(7),
+        #who-are-you input#full-name {
+            left: 35%;
+        }
+        #who-are-you img.image-my-name-is:nth-of-type(6) {
+            top: 185px;
+            left: 51%;
+        }
+        #who-are-you img.image-my-name-is:nth-of-type(5) {
+            top: 160px;
+            left: 65%;
+        }
+        #who-are-you img.image-my-name-is:nth-of-type(4) {
+            top: 140px;
+            left: 73%;
+        }
+        #who-are-you img.image-my-name-is:nth-of-type(3) {
+            top: 115px;
+            left: 82%;
+        }
+        #who-are-you img.image-my-name-is:nth-of-type(2),
+        #who-are-you img.image-my-name-is:nth-of-type(1) {
+            display: none;
         }
     }
 }
