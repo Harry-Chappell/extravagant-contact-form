@@ -128,8 +128,8 @@
 				
 				<form action="#" method="get">
 					
-					<section id="who-are-you" 	class="wrap background-yellow">
-						<h2 class="font-prisma color-black">Who are you?</h2>
+				<section id="who-are-you" 	class="wrap background-yellow">
+					<h2 class="font-prisma color-black">Who are you?</h2>
 						
 					<label for="full-name" class="hide">Full Name</label>
 					<input type="text" id="full-name" name="full-name" placeholder="Slim Shady" class="font-besom">
@@ -199,6 +199,90 @@
 
 				<section id="sport-shirt" 	class="wrap background-blue">
 					<h2 class="font-rush-brush color-dark-blue">What's your desired sport and shirt number?</h2>
+
+					<label for="sport" class="hide">Sport of Choice:</label>
+					<select name="sport" id="sport-select" oninput="selectClass(this.value)">
+						<option value="" class="placeholder" selected disabled hidden>Select</option>
+						<option value="football">Football</option>
+						<option value="bowling">Bowling</option>
+						<option value="baseball">Baseball</option>
+						<option value="volleyball">Volleyball</option>
+						<option value="basketball">Basketball</option>
+					</select>
+					
+					<div class="shirt">
+						<i class="fa-solid fa-shirt"></i>
+						<label for="shirt-number" class="hide">Shirt number</label>
+						<input id="shirt-number" name="shirt-number" type="number" min="1" max="99" step="1" value="1">
+					</div>
+
+					<div id="balls">
+						<div class="balls bowling">
+							<i class="fa-solid fa-bowling-ball"></i>
+							<i class="fa-solid fa-bowling-ball"></i>
+							<i class="fa-solid fa-bowling-ball"></i>
+						</div>
+						<div class="balls baseball">
+							<i class="fa-solid fa-baseball"></i>
+							<i class="fa-solid fa-baseball"></i>
+							<i class="fa-solid fa-baseball"></i>
+						</div>
+						<div class="balls basketball">
+							<i class="fa-solid fa-basketball"></i>
+							<i class="fa-solid fa-basketball"></i>
+							<i class="fa-solid fa-basketball"></i>
+						</div>
+						<div class="balls volleyball">
+							<i class="fa-solid fa-volleyball"></i>
+							<i class="fa-solid fa-volleyball"></i>
+							<i class="fa-solid fa-volleyball"></i>
+						</div>
+						<div class="balls football">
+							<i class="fa-solid fa-futbol"></i>
+							<i class="fa-solid fa-futbol"></i>
+							<i class="fa-solid fa-futbol"></i>
+						</div>
+					</div>
+
+					<script>
+						function selectClass(value) {
+							document.getElementById("balls").setAttribute("class", value);
+						}
+					</script>
+					<script>
+						jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"></div><div class="quantity-button quantity-down"></div></div>').insertAfter('.shirt input');
+						jQuery('.shirt').each(function() {
+						var spinner = jQuery(this),
+							input = spinner.find('input[type="number"]'),
+							btnUp = spinner.find('.quantity-up'),
+							btnDown = spinner.find('.quantity-down'),
+							min = input.attr('min'),
+							max = input.attr('max');
+
+						btnUp.click(function() {
+							var oldValue = parseFloat(input.val());
+							if (oldValue >= max) {
+							var newVal = oldValue;
+							} else {
+							var newVal = oldValue + 1;
+							}
+							spinner.find("input").val(newVal);
+							spinner.find("input").trigger("change");
+						});
+
+						btnDown.click(function() {
+							var oldValue = parseFloat(input.val());
+							if (oldValue <= min) {
+							var newVal = oldValue;
+							} else {
+							var newVal = oldValue - 1;
+							}
+							spinner.find("input").val(newVal);
+							spinner.find("input").trigger("change");
+						});
+
+						});
+					</script>
 				</section>
 
 				<section id="audio" 		class="wrap background-purple">

@@ -932,7 +932,7 @@ probably best not to use it. I mean, were you going to anyway? */
   font-size: 30px;
   display: flex;
 }
-.page-template-page-form input {
+.page-template-page-form input, .page-template-page-form select {
   background-color: rgba(255, 255, 255, 0.1);
   border: 0;
   height: 60px;
@@ -945,13 +945,13 @@ probably best not to use it. I mean, were you going to anyway? */
   text-indent: 15px;
   display: flex;
 }
-.page-template-page-form input::-moz-placeholder {
+.page-template-page-form input::-moz-placeholder, .page-template-page-form select::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.page-template-page-form input:-ms-input-placeholder {
+.page-template-page-form input:-ms-input-placeholder, .page-template-page-form select:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.page-template-page-form input::placeholder {
+.page-template-page-form input::placeholder, .page-template-page-form select::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .page-template-page-form #who-are-you {
@@ -1197,6 +1197,130 @@ probably best not to use it. I mean, were you going to anyway? */
 }
 .page-template-page-form #contact .contact-options-inputs > div span.prefix + input {
   text-indent: 0;
+}
+.page-template-page-form #sport-shirt {
+  position: relative;
+  min-height: 600px;
+}
+.page-template-page-form #sport-shirt select {
+  width: 310px;
+  position: relative;
+  z-index: 1;
+}
+.page-template-page-form #sport-shirt .shirt {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  height: 400px;
+  width: 300px;
+  z-index: 1;
+}
+.page-template-page-form #sport-shirt .shirt i {
+  color: white;
+  font-size: 400px;
+  position: absolute;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 0;
+}
+.page-template-page-form #sport-shirt .shirt input {
+  position: absolute;
+  top: 0;
+  height: 325px;
+  color: rgba(15, 181, 255, 0.75);
+  text-align: center;
+  right: 50%;
+  width: 100%;
+  transform: translateX(50%);
+  font-size: 175px;
+  margin: 75px 0 0;
+  padding: 0;
+  background: none;
+  letter-spacing: -20px;
+  text-indent: -15px;
+}
+.page-template-page-form #sport-shirt .shirt input::-moz-placeholder {
+  color: rgba(15, 181, 255, 0.25);
+}
+.page-template-page-form #sport-shirt .shirt input:-ms-input-placeholder {
+  color: rgba(15, 181, 255, 0.25);
+}
+.page-template-page-form #sport-shirt .shirt input::placeholder {
+  color: rgba(15, 181, 255, 0.25);
+}
+.page-template-page-form #sport-shirt .shirt input::-webkit-inner-spin-button, .page-template-page-form #sport-shirt .shirt input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.page-template-page-form #sport-shirt .shirt .quantity-nav {
+  position: absolute;
+  z-index: 2;
+  bottom: calc((100% - 75px) / 2);
+  transform: translateY(50%);
+  right: 30px;
+}
+.page-template-page-form #sport-shirt .shirt .quantity-button {
+  cursor: pointer;
+  opacity: 0.5;
+  height: 20px;
+  width: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-template-page-form #sport-shirt .shirt .quantity-button:hover {
+  opacity: 1;
+}
+.page-template-page-form #sport-shirt .shirt .quantity-button:before {
+  content: " ";
+  height: 0px;
+  width: 0px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  border-top: 0;
+  border-bottom: 10px solid #0fb5ff;
+}
+.page-template-page-form #sport-shirt .shirt .quantity-button:last-of-type:before {
+  border-bottom: 0;
+  border-top: 10px solid #0fb5ff;
+}
+.page-template-page-form #sport-shirt div#balls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  color: white;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.page-template-page-form #sport-shirt div#balls .balls {
+  display: none;
+}
+.page-template-page-form #sport-shirt div#balls.bowling .bowling, .page-template-page-form #sport-shirt div#balls.baseball .baseball, .page-template-page-form #sport-shirt div#balls.basketball .basketball, .page-template-page-form #sport-shirt div#balls.volleyball .volleyball, .page-template-page-form #sport-shirt div#balls.football .football {
+  display: flex;
+}
+.page-template-page-form #sport-shirt div#balls i:nth-of-type(1) {
+  font-size: 300px;
+  bottom: -100px;
+  position: absolute;
+  left: -50px;
+}
+.page-template-page-form #sport-shirt div#balls i:nth-of-type(2) {
+  font-size: 200px;
+  bottom: -50px;
+  position: absolute;
+  left: 35%;
+  transform: rotate(45deg);
+}
+.page-template-page-form #sport-shirt div#balls i:nth-of-type(3) {
+  font-size: 100px;
+  bottom: 130px;
+  position: absolute;
+  left: 25%;
+  transform: rotate(-45deg);
 }
 
 /******************************************************************
